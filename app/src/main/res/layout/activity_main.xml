@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verticalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50px"
+            android:paddingTop="50px"
+            android:paddingRight="50px"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:id="@+id/workHoursLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horas de Trabalho" />
+
+            <RadioButton
+                android:id="@+id/internshipTimeRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/coral"
+                android:text="6h" />
+
+            <RadioButton
+                android:id="@+id/fullTimeRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/coral"
+                android:text="8h e 48 min" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50px"
+            android:paddingTop="50px"
+            android:paddingRight="50px"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:id="@+id/staticLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fixar" />
+
+            <RadioButton
+                android:id="@+id/startTimeRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/coral"
+                android:text="Início" />
+
+            <RadioButton
+                android:id="@+id/endTimeRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/coral"
+                android:text="Fim" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/startTimeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:text="Início" />
+
+    <TimePicker
+        android:id="@+id/startTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <TextView
+        android:id="@+id/endTimeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:text="Fim" />
+
+    <TimePicker
+        android:id="@+id/endTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        android:backgroundTint="@color/coral"
+        android:text="Limpar" />
+
+</LinearLayout>
